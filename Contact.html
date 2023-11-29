@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta name="immnewsnetwork-Contact Us" content="Get in touch with us" />
+  </head>
+
+  <body>
+    <form
+      name="contactform"
+      id="contactform"
+      action="process-insert.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <legend>Personal Info</legend>
+
+      <label for="firstName">First Name: </label>
+      <input id="fName" name="fName" required />
+
+      <label for="lastName">Last Name: </label>
+      <input id="lName" name="lName" required />
+
+      <label for="email">E-mail: </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        placeholder="john.doe@apple.com"
+      />
+
+      <fieldset>
+        <legend>Category Interests</legend>
+        <input type="checkbox" name="industry" id="industry" />Industry
+        <input type="checkbox" name="technical" id="technical" />Technical
+        <input type="checkbox" name="career" id="career" />Career
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Role</legend>
+        <input type="radio" name="role" value="writer" id="writer" />Writer
+        <input
+          type="radio"
+          name="role"
+          value="contributor"
+          id="contributor"
+        />Contributor
+        <input
+          type="radio"
+          name="role"
+          value="administrator"
+          id="administrator"
+        />Administrator
+      </fieldset>
+
+      <input type="submit" />
+    </form>
+
+    <p id="formMessage"></p>
+
+    <script type="text/javascript" src="main3.js"></script>
+  </body>
+</html>
